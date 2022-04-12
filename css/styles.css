@@ -75,18 +75,18 @@ body {
 /* Section one ======================================== */
 
 .section-titles {
-    min-height: 1200px;
+    min-height: 1240px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--color-white);
-  }
+}
   
 .section-titles h2 {
     font-size: 24px;
     font-weight: 700;
     color: var(--color-medium-gray);
-    margin: 40px auto 8px auto;
+    margin: 40px auto 12px auto;
 }
   
 .title-card {
@@ -96,7 +96,7 @@ body {
     flex-direction: column;
     background-color: var(--color-card-gray);
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 28px;
     margin-right: 1px;
     margin-bottom: 28px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
@@ -139,9 +139,9 @@ body {
 
 #horizontal-line {
     width: auto;
-    border: 1px solid #000;
+    border: 1px solid var(--color-green);
     background-color: var(--color-green);
-    margin: 12px 12px 1px 12px;
+    margin: 0 12px 1px 12px;
 }
 
 .title-card-main span {
@@ -403,18 +403,7 @@ footer {
 
 /* Responsividade =================================================================== */
 
-@media(min-width: 576px) {
-
-    html {
-        font-size: 20px;
-    }
-}
-
 @media(min-width: 768px) {
-
-    html {
-        font-size: 24px;
-    }
 
 
 
@@ -428,7 +417,7 @@ footer {
         justify-content: space-between;
     }
 
-    .logo {
+    .logo h1 {
         font-size: 24px;
         font-weight: 700;
         margin-bottom: 0;
@@ -455,7 +444,49 @@ footer {
         text-decoration: none;
     }
 
-    /**/
+    /* Seção um responsivo ===============================================*/
 
+    .section-titles {
+        min-height: 780px;
+    }
 
+    .section-titles h2 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .title-card {
+        width: 990px;
+        height: 247px;
+    }
+
+    .title-card-main h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--color-green);
+    }
+
+    .title-card-main p {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--color-medium-gray);
+    }
+
+    .title-card-main span {
+        font-size: 10px;
+        font-weight: 400;
+        color: var(--color-green);
+    }
+
+    .title-card-description {
+        width: auto;
+    } 
+
+}
+
+@media(min-width: 990px) {
+
+    html {
+        font-size: 20px;
+    }
 }
