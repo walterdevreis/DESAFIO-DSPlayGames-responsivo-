@@ -9,7 +9,6 @@
     --color-medium-gray: #797979;
     --color-red: #DD7E92;
     --color-gray-form: #C4C4C4;
-
 }
 
 * {
@@ -133,8 +132,7 @@ body {
     font-size: 12px;
     font-weight: 700;
     color: var(--color-medium-gray);
-    margin: 3px 12px 3px 12px;
-    
+    margin: 3px 12px 3px 12px;    
 }
 
 #horizontal-line {
@@ -195,16 +193,14 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-card-gray);
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
-
-
 .cards-responsive {
+    max-width: 990px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 40px;
 }
 
 #dsgame-card-list h2 {
@@ -219,7 +215,8 @@ body {
 }
 
 .game-card {
-    margin: 15px ;
+    max-width: 300px;
+    margin: 15px 10px;
 }
 
 .dsgame-card {
@@ -291,6 +288,7 @@ body {
 }
 
 .form-area {
+    width: 300px;
     background-color: var(--color-light-gray);
     padding: 52px 10px 6px 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
@@ -313,7 +311,7 @@ body {
     font-weight: 400;
     width: 280px;
     height: 50px;
-    margin: 20px 10px 7px 10px;
+    margin: 20px auto 7px auto;
     padding: 13px 100px 13px 22px;
     border: 12px;
     border: 1px solid var(--color-dark-gray);
@@ -377,7 +375,6 @@ footer {
     justify-content: space-between;
     width: 100%;
     height: 302px;
-
     margin: 40px auto 0 auto;
     background-color: var(--color-dark-gray);
     color: var(--color-white);
@@ -399,6 +396,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .termos a {
@@ -413,8 +411,6 @@ footer {
 /* Responsividade =================================================================== */
 
 @media(min-width: 768px) {
-
-
 
     .nav-container {
         display: inline-block;
@@ -443,7 +439,6 @@ footer {
     .nav-right li {
         display: inline;
         margin: auto 20px;
-
     }
 
     .nav-main a {
@@ -465,8 +460,12 @@ footer {
     }
 
     .title-card {
-        width: 990px;
+        width: 768px;
         height: 247px;
+    }
+
+    .title-card-description p {
+        margin: 12px;
     }
 
     .title-card-main h3 {
@@ -491,13 +490,31 @@ footer {
         width: auto;
     } 
 
-    /* Seção Two responsivo ==================================== */
+    /* Seção footer responsivo ==================================== */
 
-    #dsgame-card-list h2 {
-        font-size: 36px;
-        font-weight: 700;
+    footer {
+        height: 190px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
+    .container-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;   
+    }
+
+    .links {
+        width: 111px;
+        display: inline;
+    }
+
+    .termos {
+        display: block;
+        width: 161px;
+    }
 }
 
 @media(min-width: 990px) {
@@ -505,4 +522,57 @@ footer {
     html {
         font-size: 20px;
     }
+    
+    #dsgame-card-list {
+        height: 559px;
+        padding-bottom: 45px;
+    }
+
+    #dsgame-card-list h2 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .title-card {
+        width: 990px;
+        height: 247px;
+    }
+
+    .title-card-description p {
+        margin: 28px 12px 25px 12px;
+    }
+
+    .form-area {
+        width: 790px;
+        padding: 0px 0 6px 0;
+    }
+
+    .form-conteiner {
+        width: 790px;
+        padding: 30px 70px;
+    }  
+
+    .submit-reset {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 30px auto;     
+    }
+
+    .submit-reset input {
+        margin: auto;
+    }
+
+    .branco {
+        display: inline;
+        margin: 0;
+    }
+
+    .text-form input {
+        width: 642px;
+    }
+
+    .ctrl-form {
+        padding-left: 0;
+    }    
 }
