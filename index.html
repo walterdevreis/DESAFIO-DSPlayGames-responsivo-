@@ -137,12 +137,12 @@
           </div>
         </div>
       </section>
-      <section id="signup">
+      <section id="signup" class="dsgame-form">
         <div>
           <h2>Faça sua inscrição</h2>
-          <div>
+          <div class="form-area">
             <form action="#">
-              <div>
+              <div class="text-form">
                 <input
                   id="ctrl-name"
                   name="name"
@@ -150,7 +150,7 @@
                   placeholder="Nome completo"
                 />
               </div>
-              <div>
+              <div class="text-form">
                 <input
                   id="ctrl-email"
                   name="email"
@@ -158,10 +158,8 @@
                   placeholder="Email"
                 />
               </div>
-              <div>
-                <label for="ctrl-platform"
-                  >Qual sua plataforma preferida?</label
-                >
+              <div class="ctrl-form">
+                <label for="ctrl-platform">Qual sua plataforma preferida?</label>
                 <div id="ctrl-platform">
                   <div>
                     <input type="radio" name="platform" id="ctrl-platform-1" />
@@ -177,15 +175,13 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="ctrl-form">
                 <input type="checkbox" id="ctrl-news" name="news" />
-                <label for="ctrl-news"
-                  >Desejo receber novidades por email.</label
-                >
+                <label for="ctrl-news">Desejo receber novidades por email.</label>
               </div>
-              <div>
-                <input type="submit" value="Enviar" />
-                <input type="reset" value="Limpar" />
+              <div class="submit-reset">
+                <input class="vermelho" type="submit" value="Enviar" />
+                <input class="branco" type="reset" value="Limpar" />
               </div>
             </form>
           </div>

@@ -8,6 +8,8 @@
     --color-light-gray: #E5E5E5;
     --color-medium-gray: #797979;
     --color-red: #DD7E92;
+    --color-gray-form: #C4C4C4;
+
 }
 
 * {
@@ -97,7 +99,7 @@ body {
     margin-top: 8px;
     margin-right: 1px;
     margin-bottom: 28px;
-
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
 .title-card button {
@@ -110,7 +112,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0%;
+    padding: 20px;
     margin: auto;
     border-radius: 8px;
 }
@@ -139,7 +141,7 @@ body {
     width: auto;
     border: 1px solid #000;
     background-color: var(--color-green);
-    margin: 3px 12px 1px 12px;
+    margin: 12px 12px 1px 12px;
 }
 
 .title-card-main span {
@@ -171,15 +173,6 @@ body {
     color: var(--color-red);
     text-decoration: none;
     margin: 0 16px 12px 12px;
-}
-
-.title-card-description button {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
 }
   
 .title-price {
@@ -217,6 +210,10 @@ body {
 
 .game-card {
     margin-bottom: 28px;
+}
+
+.dsgame-card {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
 .dsgame-card img{
@@ -259,5 +256,102 @@ body {
     font-size: 36px;
     font-weight: 700;
     color: var(--color-green);
+}
+
+/* Seção Formulário ===================================================*/
+
+.dsgame-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dsgame-form h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-medium-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto 16px auto;
+}
+
+.form-area {
+    background-color: var(--color-light-gray);
+    padding: 52px 10px 6px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    border-radius: 8px;
+}
+
+.text-form form {
+    width: 300px;
+    height: 603px;
+    background-color: var(--color-card-gray);
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.text-form input {
+    font-size: 16px;
+    font-weight: 400;
+    width: 280px;
+    height: 50px;
+    margin: 20px 10px 7px 10px;
+    padding: 13px 100px 13px 22px;
+    border: 12px;
+    border: 1px solid var(--color-dark-gray);
+    color: var(--color-card-gray);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-form ::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-gray-form);
+}
+
+.ctrl-form {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-medium-gray);
+    padding: 10px 10px 13px 10px;    
+}
+
+.submit-reset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vermelho {
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--color-red);
+} 
+
+.branco {
+    width: 244px;
+    height: 67px;
+    margin: 20px auto;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-red);
+    background-color: var(--color-white); 
+    border: 2px solid var(--color-red);   
 }
 
