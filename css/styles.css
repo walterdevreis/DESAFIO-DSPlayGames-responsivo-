@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-    width: auto;
+    width: 990px;
     margin: 0 auto;
 }
 
@@ -189,6 +189,7 @@ body {
 /* Section Two ==================================================================*/
 
 #dsgame-card-list{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,3 +356,45 @@ body {
     border: 2px solid var(--color-red);   
 }
 
+/* Footer =======================================================================*/
+
+footer {
+    font-size: 14px;
+    font-family: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 302px;
+
+    margin: 40px auto 0 auto;
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+    padding: 28px auto;
+}
+
+.links a {
+    color: var(--color-white);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    margin: 37px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.termos a {
+    color: var(--color-white);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
