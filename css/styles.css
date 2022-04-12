@@ -400,3 +400,62 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/* Responsividade =================================================================== */
+
+@media(min-width: 576px) {
+
+    html {
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 768px) {
+
+    html {
+        font-size: 24px;
+    }
+
+
+
+    .nav-container {
+        display: inline-block;
+    }
+
+    .nav-main {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    .nav-right { 
+        width: auto;
+        display: flex;
+        font-size: 18px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-right li {
+        display: inline;
+        margin: auto 20px;
+
+    }
+
+    .nav-main a {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--color-white);
+        text-decoration: none;
+    }
+
+    /**/
+
+
+}
